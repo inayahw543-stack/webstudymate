@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Akademik - StudyMate</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">StudyMate</span>
+          <span class="brand-subtitle">Academic Workspace</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Dashboard
+        </a>
+        <a href="jadwal.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jadwal
+        </a>
+        <a href="tugas.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          Tugas
+        </a>
+        <a href="materi.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          Materi
+        </a>
+        <a href="progress.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Progress
+        </a>
+        <a href="profil.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Profil
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="bantuan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          Bantuan
+        </a>
+        <a href="pengaturan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          Pengaturan
+        </a>
+        <div class="academic-stat-widget">
+          <div class="academic-stat-row">
+            <span>SKS Aktif</span>
+            <span class="academic-stat-val">21 SKS</span>
+          </div>
+          <div class="academic-stat-row">
+            <span>IPK Sementara</span>
+            <span class="academic-stat-val">3.84 / 4.00</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="topbar-search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Cari tugas, mata kuliah, catatan...">
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <button class="btn btn-primary btn-sm" data-open-modal="createTaskModal">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            + Buat Tugas
+          </button>
+          <button class="btn-icon" aria-label="Notifikasi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </button>
+          <a href="profil.html" class="topbar-user">
+            <img src="../assets/images/avatar.jpg" alt="Inayah Az-Zahra" class="user-avatar">
+            <div class="user-info">
+              <span class="user-name">Inayah Az-Zahra</span>
+              <span class="user-role">Teknik Informatika '22</span>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <main class="page-container">
+        <!-- HEADER TITLE -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 14px;">
+          <div>
+            <h1 style="font-size: 1.7rem; margin-bottom: 4px;">Progress Akademik</h1>
+            <p style="margin: 0; max-width: 650px;">Pantau perkembangan penyelesaian tugas, target belajar mandiri, dan statistik capaian semester ini.</p>
+          </div>
+          <span class="badge badge-neutral" style="font-size: 0.82rem; padding: 6px 14px;">
+            • Semester Ganjil 2024/2025
+          </span>
+        </div>
+
+        <!-- 4 KPI CARDS -->
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-header">
+              <span class="kpi-label">Total Tugas</span>
+              <div class="kpi-icon-pill purple">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+              </div>
+            </div>
+            <div class="kpi-value">22 Tugas</div>
+            <div class="kpi-footer">
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Tercatat di Semester Ini</span>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-header">
+              <span class="kpi-label">Tugas Selesai</span>
+              <div class="kpi-icon-pill green">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </div>
+            <div class="kpi-value">18 Tugas</div>
+            <div class="kpi-footer">
+              <span class="badge badge-success"><span class="badge-dot"></span> 82% Tingkat Penyelesaian</span>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-header">
+              <span class="kpi-label">Tugas Belum Selesai</span>
+              <div class="kpi-icon-pill orange">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line></svg>
+              </div>
+            </div>
+            <div class="kpi-value">4 Tugas</div>
+            <div class="kpi-footer">
+              <span class="badge badge-warning"><span class="badge-dot"></span> 2 mendekati deadline</span>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-header">
+              <span class="kpi-label">Efisiensi Belajar</span>
+              <div class="kpi-icon-pill purple">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+            </div>
+            <div class="kpi-value">21.5 Jam</div>
+            <div class="kpi-footer">
+              <span style="font-size: 0.8rem; color: var(--primary-color); font-weight: 600;">Target 25 Jam/Minggu (86%)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROGRESS PER MATA KULIAH -->
+        <div class="card-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Progress Penyelesaian per Mata Kuliah</h2>
+              <span class="panel-subtitle">Rincian status pengerjaan seluruh tugas aktif pada semester berjalan</span>
+            </div>
+            <span class="badge badge-neutral">5 Mata Kuliah Terdaftar</span>
+          </div>
+
+          <div class="progress-subject-list">
+            <!-- MK 1 -->
+            <div class="progress-subject-card">
+              <div class="subject-icon-box" style="background-color: var(--status-success-bg); color: var(--status-success);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="subject-info-box">
+                <h4 class="subject-name">Rekayasa Perangkat Lunak</h4>
+                <span class="subject-tasks-stat">5 dari 5 Tugas Selesai</span>
+              </div>
+              <div class="subject-bar-box">
+                <div class="progress-track">
+                  <div class="progress-fill green" style="width: 100%;"></div>
+                </div>
+                <span class="progress-percent-label">100%</span>
+              </div>
+              <span class="badge badge-success" style="min-width: 90px; justify-content: center;">✓ Selesai</span>
+            </div>
+
+            <!-- MK 2 -->
+            <div class="progress-subject-card">
+              <div class="subject-icon-box" style="background-color: var(--primary-light); color: var(--primary-color);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path></svg>
+              </div>
+              <div class="subject-info-box">
+                <h4 class="subject-name">Kecerdasan Buatan & Machine Learning</h4>
+                <span class="subject-tasks-stat">4 dari 6 Tugas Selesai</span>
+              </div>
+              <div class="subject-bar-box">
+                <div class="progress-track">
+                  <div class="progress-fill purple" style="width: 67%;"></div>
+                </div>
+                <span class="progress-percent-label">67%</span>
+              </div>
+              <span class="badge badge-neutral" style="min-width: 90px; justify-content: center;">2 tugas aktif</span>
+            </div>
+
+            <!-- MK 3 -->
+            <div class="progress-subject-card">
+              <div class="subject-icon-box" style="background-color: var(--primary-light); color: var(--primary-color);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div class="subject-info-box">
+                <h4 class="subject-name">Basis Data Terdistribusi</h4>
+                <span class="subject-tasks-stat">5 dari 6 Tugas Selesai</span>
+              </div>
+              <div class="subject-bar-box">
+                <div class="progress-track">
+                  <div class="progress-fill purple" style="width: 83%;"></div>
+                </div>
+                <span class="progress-percent-label">83%</span>
+              </div>
+              <span class="badge badge-neutral" style="min-width: 90px; justify-content: center;">1 tugas aktif</span>
+            </div>
+
+            <!-- MK 4 -->
+            <div class="progress-subject-card">
+              <div class="subject-icon-box" style="background-color: var(--status-success-bg); color: var(--status-success);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="subject-info-box">
+                <h4 class="subject-name">Desain Interaksi Manusia & Komputer</h4>
+                <span class="subject-tasks-stat">3 dari 3 Tugas Selesai</span>
+              </div>
+              <div class="subject-bar-box">
+                <div class="progress-track">
+                  <div class="progress-fill green" style="width: 100%;"></div>
+                </div>
+                <span class="progress-percent-label">100%</span>
+              </div>
+              <span class="badge badge-success" style="min-width: 90px; justify-content: center;">✓ Selesai</span>
+            </div>
+
+            <!-- MK 5 -->
+            <div class="progress-subject-card">
+              <div class="subject-icon-box" style="background-color: var(--status-warning-bg); color: var(--status-warning);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div class="subject-info-box">
+                <h4 class="subject-name">Etika Profesi & Komunikasi</h4>
+                <span class="subject-tasks-stat">1 dari 2 Tugas Selesai</span>
+              </div>
+              <div class="subject-bar-box">
+                <div class="progress-track">
+                  <div class="progress-fill orange" style="width: 50%;"></div>
+                </div>
+                <span class="progress-percent-label">50%</span>
+              </div>
+              <span class="badge badge-neutral" style="min-width: 90px; justify-content: center;">1 tugas aktif</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- MODAL: BUAT TUGAS BARU -->
+  <div class="modal-backdrop" id="createTaskModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">+ Buat Tugas Kuliah Baru</h3>
+        <button class="btn-icon" data-close-modal style="border: none;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <form id="createTaskForm">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="taskTitleInput">Judul Tugas / Penugasan</label>
+            <input type="text" id="taskTitleInput" class="form-input" placeholder="Contoh: Modul Capstone Evaluasi" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="taskSubjectSelect">Mata Kuliah</label>
+            <select id="taskSubjectSelect" class="form-select">
+              <option value="Pemrograman Web Lanjut">Pemrograman Web Lanjut</option>
+              <option value="Kecerdasan Buatan & ML">Kecerdasan Buatan & ML</option>
+              <option value="Desain Interaksi MK">Desain Interaksi MK</option>
+              <option value="Basis Data Terdistribusi">Basis Data Terdistribusi</option>
+            </select>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="taskDeadlineInput">Tenggat Waktu</label>
+              <input type="text" id="taskDeadlineInput" class="form-input" placeholder="Contoh: Minggu, 23:59 WIB" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="taskPrioritySelect">Tingkat Prioritas</label>
+              <select id="taskPrioritySelect" class="form-select">
+                <option value="Tinggi">Tinggi</option>
+                <option value="Sedang">Sedang</option>
+                <option value="Rendah">Rendah</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" data-close-modal>Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan Tugas</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container"></div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

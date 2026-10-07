@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi Pembelajaran - StudyMate</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">StudyMate</span>
+          <span class="brand-subtitle">Academic Workspace</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Dashboard
+        </a>
+        <a href="jadwal.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jadwal
+        </a>
+        <a href="tugas.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          Tugas
+        </a>
+        <a href="materi.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          Materi
+        </a>
+        <a href="progress.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Progress
+        </a>
+        <a href="profil.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Profil
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="bantuan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          Bantuan
+        </a>
+        <a href="pengaturan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          Pengaturan
+        </a>
+        <div class="academic-stat-widget">
+          <div class="academic-stat-row">
+            <span>SKS Aktif</span>
+            <span class="academic-stat-val">21 SKS</span>
+          </div>
+          <div class="academic-stat-row">
+            <span>IPK Sementara</span>
+            <span class="academic-stat-val">3.84 / 4.00</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="topbar-search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Cari materi kuliah, modul, atau dokumen...">
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <button class="btn btn-primary btn-sm" data-open-modal="createTaskModal">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            + Buat Tugas
+          </button>
+          <button class="btn-icon" aria-label="Notifikasi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </button>
+          <a href="profil.html" class="topbar-user">
+            <img src="../assets/images/avatar.jpg" alt="Inayah Az-Zahra" class="user-avatar">
+            <div class="user-info">
+              <span class="user-name">Inayah Az-Zahra</span>
+              <span class="user-role">Teknik Informatika '22</span>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <main class="page-container">
+        <!-- HEADER TITLE -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--primary-color); letter-spacing: 0.05em; margin-bottom: 4px;">
+              REPOSITORI AKADEMIK • Semester Ganjil 2024/2025
+            </div>
+            <h1 style="font-size: 1.7rem; margin-bottom: 4px;">Materi Pembelajaran</h1>
+            <p style="margin: 0; max-width: 650px;">Akses dan unduh berkas materi perkuliahan, slide presentasi dosen, modul praktikum, dan rekaman kelas.</p>
+          </div>
+          <button class="btn btn-primary" onclick="showToast('Modul unggah catatan mandiri siap digunakan.')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            + Unggah Catatan Mandiri
+          </button>
+        </div>
+
+        <!-- SEARCH & FILTER BAR -->
+        <div class="card-panel" style="padding: 18px 22px; margin-bottom: 24px;">
+          <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 14px; margin-bottom: 16px;">
+            <div class="input-container">
+              <span class="input-icon-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </span>
+              <input type="text" class="form-input has-left-icon" placeholder="Cari materi kuliah, slide presentasi, topik, atau dosen...">
+            </div>
+            <select class="form-select">
+              <option>Semua Mata Kuliah</option>
+              <option>Rekayasa Perangkat Lunak</option>
+              <option>Kecerdasan Buatan & ML</option>
+              <option>Desain Interaksi MK</option>
+              <option>Basis Data Terdistribusi</option>
+            </select>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);">Format Berkas:</span>
+            <div class="filter-tabs" style="margin-bottom: 0;">
+              <button class="filter-chip active" data-filter="all">Semua Format (24)</button>
+              <button class="filter-chip" data-filter="ppt">Slide PPT (12)</button>
+              <button class="filter-chip" data-filter="pdf">Modul Praktikum (6)</button>
+              <button class="filter-chip" data-filter="ebook">E-Book (4)</button>
+              <button class="filter-chip" data-filter="video">Rekaman Kuliah (2)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIST HEADER & SORT -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+          <h3 style="font-size: 1.05rem; font-weight: 700;">Daftar Modul & Dokumen Terverifikasi <span style="font-size: 0.82rem; font-weight: 500; color: var(--text-muted);">(6 dokumen terbaru)</span></h3>
+          <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600;">Diurutkan: Tanggal Terbit (Terbaru) ▾</span>
+        </div>
+
+        <!-- 6 MATERIALS CARDS GRID -->
+        <div class="materials-grid">
+          <!-- CARD 1: PPT -->
+          <div class="material-card">
+            <div class="material-card-top">
+              <div class="material-file-icon ppt">PPT</div>
+              <span class="badge badge-purple">Rekayasa Perangkat Lunak</span>
+            </div>
+            <h4 class="material-title">Pertemuan 8: Software Architecture & Microservices</h4>
+            <p class="material-desc">Dekomposisi layanan monolitik menjadi layanan otonom, event-driven pattern, dan API Gateway.</p>
+            <div class="material-meta">
+              <span>📄 18.4 MB (PPTX)</span>
+              <span>📅 14 Okt 2024</span>
+            </div>
+            <div class="material-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka pratinjau dokumen PPT...')">👁️ Lihat</button>
+              <button class="btn btn-primary btn-sm" onclick="showToast('Mengunduh slide pertemuan 8...')">📥 Unduh</button>
+            </div>
+          </div>
+
+          <!-- CARD 2: PDF -->
+          <div class="material-card">
+            <div class="material-card-top">
+              <div class="material-file-icon pdf">PDF</div>
+              <span class="badge badge-success"><span class="badge-dot"></span> Kecerdasan Buatan & ML</span>
+            </div>
+            <h4 class="material-title">Modul Praktikum: Deep Neural Network dengan PyTorch</h4>
+            <p class="material-desc">Panduan implementasi multilayer perceptron, tensor operations, optimasi Adam, dan visualisasi loss.</p>
+            <div class="material-meta">
+              <span>📄 6.2 MB (PDF)</span>
+              <span>📅 12 Okt 2024</span>
+            </div>
+            <div class="material-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka PDF viewer modul praktikum...')">👁️ Lihat</button>
+              <button class="btn btn-primary btn-sm" onclick="showToast('Mengunduh modul praktikum PyTorch...')">📥 Unduh</button>
+            </div>
+          </div>
+
+          <!-- CARD 3: E-BOOK -->
+          <div class="material-card">
+            <div class="material-card-top">
+              <div class="material-file-icon book">BOOK</div>
+              <span class="badge badge-neutral">Desain Interaksi MK</span>
+            </div>
+            <h4 class="material-title">Ethics for the Information Age (8th Edition)</h4>
+            <p class="material-desc">Referensi utama etika komputasi, privasi data pengguna, hak cipta intellectual property, dan AI safety.</p>
+            <div class="material-meta">
+              <span>📄 34.5 MB (EPUB/PDF)</span>
+              <span>📅 08 Okt 2024</span>
+            </div>
+            <div class="material-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka reader e-book etika profesi...')">👁️ Lihat</button>
+              <button class="btn btn-primary btn-sm" onclick="showToast('Mengunduh e-book lengkap...')">📥 Unduh</button>
+            </div>
+          </div>
+
+          <!-- CARD 4: REKAMAN VIDEO -->
+          <div class="material-card">
+            <div class="material-card-top">
+              <div class="material-file-icon video">VID</div>
+              <span class="badge badge-success"><span class="badge-dot"></span> Kecerdasan Buatan & ML</span>
+            </div>
+            <h4 class="material-title">Rekaman Kuliah: Gradient Descent & Loss Optimization</h4>
+            <p class="material-desc">Sesi live-coding penjelasan algoritma optimasi konvergensi gradien dan stochastic updates.</p>
+            <div class="material-meta">
+              <span>🎥 Video Rekaman (1080p)</span>
+              <span>📅 06 Okt 2024</span>
+            </div>
+            <div class="material-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Memutar rekaman streaming Zoom cloud...')">▶️ Putar Video</button>
+              <button class="btn btn-primary btn-sm" onclick="showToast('Mengunduh rekaman kelas video...')">📥 Unduh</button>
+            </div>
+          </div>
+
+          <!-- CARD 5: PPT -->
+          <div class="material-card">
+            <div class="material-card-top">
+              <div class="material-file-icon ppt">PPT</div>
+              <span class="badge badge-warning"><span class="badge-dot"></span> Basis Data Lanjut</span>
+            </div>
+            <h4 class="material-title">Sharding, Replikasi & Teorema CAP pada NoSQL</h4>
+            <p class="material-desc">Strategi partisi horizontal basis data terdistribusi, konsistensi eventual, dan high availability.</p>
+            <div class="material-meta">
+              <span>📄 12.7 MB (PPTX)</span>
+              <span>📅 04 Okt 2024</span>
+            </div>
+            <div class="material-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka pratinjau dokumen slide...')">👁️ Lihat</button>
+              <button class="btn btn-primary btn-sm" onclick="showToast('Mengunduh materi NoSQL...')">📥 Unduh</button>
+            </div>
+          </div>
+
+          <!-- CARD 6: PDF -->
+          <div class="material-card">
+            <div class="material-card-top">
+              <div class="material-file-icon pdf">PDF</div>
+              <span class="badge badge-purple">Rekayasa Perangkat Lunak</span>
+            </div>
+            <h4 class="material-title">Template & Rubrik Penilaian Proyek Capstone</h4>
+            <p class="material-desc">Format baku laporan Software Requirement Specification (SRS) serta jadwal milestone evaluasi.</p>
+            <div class="material-meta">
+              <span>📄 4.8 MB (PDF)</span>
+              <span>📅 01 Okt 2024</span>
+            </div>
+            <div class="material-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka rubrik penilaian Capstone...')">👁️ Lihat</button>
+              <button class="btn btn-primary btn-sm" onclick="showToast('Mengunduh template SRS...')">📥 Unduh</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- MODAL: BUAT TUGAS BARU -->
+  <div class="modal-backdrop" id="createTaskModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">+ Buat Tugas Kuliah Baru</h3>
+        <button class="btn-icon" data-close-modal style="border: none;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <form id="createTaskForm">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="taskTitleInput">Judul Tugas / Penugasan</label>
+            <input type="text" id="taskTitleInput" class="form-input" placeholder="Contoh: Modul Resume Paper" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="taskSubjectSelect">Mata Kuliah</label>
+            <select id="taskSubjectSelect" class="form-select">
+              <option value="Pemrograman Web Lanjut">Pemrograman Web Lanjut</option>
+              <option value="Kecerdasan Buatan & ML">Kecerdasan Buatan & ML</option>
+              <option value="Desain Interaksi MK">Desain Interaksi MK</option>
+              <option value="Basis Data Terdistribusi">Basis Data Terdistribusi</option>
+            </select>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="taskDeadlineInput">Tenggat Waktu</label>
+              <input type="text" id="taskDeadlineInput" class="form-input" placeholder="Contoh: Minggu, 23:59 WIB" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="taskPrioritySelect">Tingkat Prioritas</label>
+              <select id="taskPrioritySelect" class="form-select">
+                <option value="Tinggi">Tinggi</option>
+                <option value="Sedang">Sedang</option>
+                <option value="Rendah">Rendah</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" data-close-modal>Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan Tugas</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container"></div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

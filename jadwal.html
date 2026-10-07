@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kuliah - StudyMate</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">StudyMate</span>
+          <span class="brand-subtitle">Academic Workspace</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Dashboard
+        </a>
+        <a href="jadwal.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jadwal
+        </a>
+        <a href="tugas.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          Tugas
+        </a>
+        <a href="materi.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          Materi
+        </a>
+        <a href="progress.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Progress
+        </a>
+        <a href="profil.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Profil
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="bantuan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          Bantuan
+        </a>
+        <a href="pengaturan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          Pengaturan
+        </a>
+        <div class="academic-stat-widget">
+          <div class="academic-stat-row">
+            <span>SKS Aktif</span>
+            <span class="academic-stat-val">21 SKS</span>
+          </div>
+          <div class="academic-stat-row">
+            <span>IPK Sementara</span>
+            <span class="academic-stat-val">3.84 / 4.00</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">
+            <span>📁 Workspace</span>
+            <span>/</span>
+            <span style="color: var(--primary-color); font-weight: 600;">Jadwal Kuliah</span>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <button class="btn btn-outline btn-sm" onclick="showToast('Sinkronisasi Google Calendar & SIAKAD sukses!')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            Sinkronisasi Kalender
+          </button>
+          <button class="btn btn-primary btn-sm" data-open-modal="createTaskModal">
+            + Tambah Jadwal Manual
+          </button>
+          <a href="profil.html" class="topbar-user">
+            <img src="../assets/images/avatar.jpg" alt="Inayah Az-Zahra" class="user-avatar">
+            <div class="user-info">
+              <span class="user-name">Inayah Az-Zahra</span>
+              <span class="user-role">Teknik Informatika '22</span>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <main class="page-container">
+        <!-- HEADER INFO BOX -->
+        <div class="card-panel" style="margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+              <span style="font-size: 1.5rem;">📅</span>
+              <h1 style="font-size: 1.6rem; margin: 0;">Jadwal Kuliah</h1>
+            </div>
+            <p style="margin: 0; max-width: 600px;">
+              Kelola dan pantau agenda perkuliahan mingguan, ruang kelas, dan presensi akademik secara tertata dan tepat waktu.
+            </p>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+            <div style="padding: 12px 18px; background: var(--bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--border-color); text-align: center;">
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Beban Mingguan</div>
+              <div style="font-size: 1.05rem; font-weight: 800; color: var(--text-main);">Total 7 Pertemuan / Minggu</div>
+            </div>
+            <div style="padding: 12px 18px; background: var(--primary-light); border-radius: var(--radius-md); border: 1px solid var(--primary-border); text-align: center;">
+              <div style="font-size: 0.75rem; color: var(--primary-color); font-weight: 600;">Beban Kuliah Hari Ini</div>
+              <div style="font-size: 1.05rem; font-weight: 800; color: var(--primary-color);">3 SKS Hari Ini</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY CAROUSEL SELECTOR -->
+        <div class="day-selector-grid">
+          <div class="day-card active">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="day-name">Senin</span>
+              <span class="badge badge-purple" style="font-size: 0.65rem; padding: 2px 6px;">Hari Ini</span>
+            </div>
+            <div class="day-date">21 Okt</div>
+            <div class="day-classes-count">• 3 Kelas Terjadwal</div>
+          </div>
+
+          <div class="day-card">
+            <span class="day-name">Selasa</span>
+            <div class="day-date">22 Okt</div>
+            <div class="day-classes-count" style="color: var(--text-muted);">• 2 Kelas</div>
+          </div>
+
+          <div class="day-card">
+            <span class="day-name">Rabu</span>
+            <div class="day-date">23 Okt</div>
+            <div class="day-classes-count" style="color: var(--text-muted);">• 4 Kelas</div>
+          </div>
+
+          <div class="day-card">
+            <span class="day-name">Kamis</span>
+            <div class="day-date">24 Okt</div>
+            <div class="day-classes-count" style="color: var(--text-muted);">• 2 Kelas</div>
+          </div>
+
+          <div class="day-card">
+            <span class="day-name">Jumat</span>
+            <div class="day-date">25 Okt</div>
+            <div class="day-classes-count" style="color: var(--text-muted);">• 1 Kelas</div>
+          </div>
+
+          <div class="day-card">
+            <span class="day-name">Sabtu</span>
+            <div class="day-date">26 Okt</div>
+            <div class="day-classes-count" style="color: var(--text-muted);">• Responsi / Lab</div>
+          </div>
+        </div>
+
+        <!-- SCHEDULE SESSIONS LIST -->
+        <div class="card-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title" id="currentDayTitle">Jadwal Kuliah: Senin, 21 Oktober 2024</h2>
+              <span class="panel-subtitle">3 Sesi Perkuliahan Berjalan</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; font-size: 0.8rem;">
+              <span style="display: flex; align-items: center; gap: 4px; color: var(--status-success);"><span class="badge-dot" style="background-color: var(--status-success);"></span> Selesai</span>
+              <span style="display: flex; align-items: center; gap: 4px; color: var(--status-info);"><span class="badge-dot" style="background-color: var(--status-info);"></span> Sedang Berlangsung</span>
+              <span style="display: flex; align-items: center; gap: 4px; color: var(--text-muted);"><span class="badge-dot" style="background-color: var(--text-muted);"></span> Mendatang</span>
+            </div>
+          </div>
+
+          <div class="schedule-list">
+            <!-- SESI 1: SELESAI -->
+            <div class="schedule-card">
+              <div class="schedule-time-box">
+                <span class="schedule-time-label">Pukul</span>
+                <span class="schedule-time-range">08:00 - 10:30</span>
+                <span class="schedule-time-duration">WIB (150 Menit)</span>
+              </div>
+              <div class="schedule-info">
+                <div class="schedule-meta-top">
+                  <span class="badge badge-neutral">IF3120</span>
+                  <span class="badge badge-neutral">3 SKS • Reguler A</span>
+                  <span class="badge badge-success"><span class="badge-dot"></span> Selesai</span>
+                </div>
+                <h3 class="schedule-subject">Rekayasa Perangkat Lunak</h3>
+                <div class="schedule-meta-bottom">
+                  <span class="schedule-meta-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Dr. Ir. Hendra Saputra, M.T.
+                  </span>
+                  <span class="schedule-meta-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path></svg>
+                    Lab Software 302
+                  </span>
+                </div>
+                <div class="schedule-actions">
+                  <button class="btn btn-outline btn-sm" onclick="showToast('Riwayat Presensi: Terverifikasi Hadir (100%)')">
+                    Detail Presensi
+                  </button>
+                  <button class="btn btn-outline btn-sm" onclick="showToast('Catatan sesi telah tersimpan di repositori.')">
+                    Catatan Sesi
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- SESI 2: SEDANG BERLANGSUNG -->
+            <div class="schedule-card current">
+              <div class="schedule-time-box">
+                <span class="schedule-time-label" style="color: #2563EB;">Sedang Berjalan</span>
+                <span class="schedule-time-range">10:45 - 13:15</span>
+                <span class="schedule-time-duration">WIB (Sisa 45 Menit)</span>
+              </div>
+              <div class="schedule-info">
+                <div class="schedule-meta-top">
+                  <span class="badge badge-neutral">IF4010</span>
+                  <span class="badge badge-neutral">4 SKS • Teori & Praktik</span>
+                  <span class="badge badge-info"><span class="badge-dot"></span> Sedang Berlangsung</span>
+                  <span class="badge badge-purple" style="font-size: 0.72rem;">🔴 LIVE SEKARANG</span>
+                </div>
+                <h3 class="schedule-subject">Kecerdasan Buatan & Machine Learning</h3>
+                <div class="schedule-meta-bottom">
+                  <span class="schedule-meta-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Prof. Sri Wahyuni, Ph.D.
+                  </span>
+                  <span class="schedule-meta-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path></svg>
+                    Gedung F Lantai 2, R204
+                  </span>
+                </div>
+                <div class="schedule-actions">
+                  <button class="btn btn-primary btn-sm btn-presensi-action">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Presensi Mandiri
+                  </button>
+                  <a href="https://zoom.us" target="_blank" class="btn btn-outline btn-sm">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                    Buka Link Zoom
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SESI 3: MENDATANG -->
+            <div class="schedule-card">
+              <div class="schedule-time-box">
+                <span class="schedule-time-label">Pukul</span>
+                <span class="schedule-time-range">14:00 - 16:30</span>
+                <span class="schedule-time-duration">WIB (Sore)</span>
+              </div>
+              <div class="schedule-info">
+                <div class="schedule-meta-top">
+                  <span class="badge badge-neutral">KU2015</span>
+                  <span class="badge badge-neutral">2 SKS • Kelas Online</span>
+                  <span class="badge badge-neutral"><span class="badge-dot"></span> Mendatang</span>
+                </div>
+                <h3 class="schedule-subject">Etika Profesi & Komunikasi</h3>
+                <div class="schedule-meta-bottom">
+                  <span class="schedule-meta-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Maya Lestari, M.I.Kom.
+                  </span>
+                  <span class="schedule-meta-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    Kuliah Daring via Zoom
+                  </span>
+                </div>
+                <div class="schedule-actions">
+                  <a href="https://zoom.us" target="_blank" class="btn btn-outline btn-sm">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                    Buka Link Zoom
+                  </a>
+                  <button class="btn btn-outline btn-sm" onclick="showToast('Pengingat 15 menit sebelum kelas aktif!')">
+                    Pengingat Aktif
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INFO BANNER PERATURAN PRESENSI (FIGMA 1:1) -->
+        <div style="margin-top: 24px; padding: 16px 20px; background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 12px; font-size: 0.88rem; color: #1E40AF;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Presensi perkuliahan ditutup 15 menit setelah sesi berakhir. Pastikan Anda telah melakukan verifikasi GPS atau kode token QR dosen pengampu.</span>
+          </div>
+          <button class="btn btn-outline btn-sm" onclick="showToast('Mengunduh jadwal format PDF...')">
+            Unduh Jadwal Format PDF 📥
+          </button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast-container"></div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Tugas Kuliah - StudyMate</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">StudyMate</span>
+          <span class="brand-subtitle">Academic Workspace</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Dashboard
+        </a>
+        <a href="jadwal.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jadwal
+        </a>
+        <a href="tugas.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          Tugas
+        </a>
+        <a href="materi.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          Materi
+        </a>
+        <a href="progress.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Progress
+        </a>
+        <a href="profil.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Profil
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="bantuan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          Bantuan
+        </a>
+        <a href="pengaturan.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          Pengaturan
+        </a>
+        <div class="academic-stat-widget">
+          <div class="academic-stat-row">
+            <span>SKS Aktif</span>
+            <span class="academic-stat-val">21 SKS</span>
+          </div>
+          <div class="academic-stat-row">
+            <span>IPK Sementara</span>
+            <span class="academic-stat-val">3.84 / 4.00</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="topbar-search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Cari tugas atau mata kuliah...">
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <button class="btn btn-primary btn-sm" data-open-modal="createTaskModal">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            + Buat Tugas
+          </button>
+          <button class="btn-icon" aria-label="Notifikasi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </button>
+          <a href="profil.html" class="topbar-user">
+            <img src="../assets/images/avatar.jpg" alt="Inayah Az-Zahra" class="user-avatar">
+            <div class="user-info">
+              <span class="user-name">Inayah Az-Zahra</span>
+              <span class="user-role">Teknik Informatika '22</span>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <main class="page-container">
+        <!-- BREADCRUMB & HEADER -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 14px;">
+          <div>
+            <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 4px;">Workspace &gt; <span style="color: var(--primary-color); font-weight: 600;">Tugas Mahasiswa</span></div>
+            <h1 style="font-size: 1.7rem; margin-bottom: 4px;">Daftar Tugas Kuliah</h1>
+            <p style="margin: 0;">Pantau dan kelola seluruh penugasan akademik, tenggat waktu, dan progres pengerjaan.</p>
+          </div>
+          <span class="badge badge-neutral" style="font-size: 0.82rem; padding: 6px 14px;">
+            ⏰ Semester Ganjil 2024/2025
+          </span>
+        </div>
+
+        <!-- 3 SUMMARY CARDS -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 26px;">
+          <div class="kpi-card">
+            <div class="kpi-header">
+              <span class="kpi-label">Belum Selesai</span>
+              <div class="kpi-icon-pill purple">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+            </div>
+            <div class="kpi-value">4 <span style="font-size: 0.95rem; font-weight: 500; color: var(--text-muted);">Tugas aktif</span></div>
+            <div class="kpi-footer">
+              <span class="badge badge-danger"><span class="badge-dot"></span> 2 mendekati deadline</span>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-header">
+              <span class="kpi-label">Selesai Pekan Ini</span>
+              <div class="kpi-icon-pill green">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </div>
+            <div class="kpi-value">18 <span style="font-size: 0.95rem; font-weight: 500; color: var(--text-muted);">Tugas tuntas</span></div>
+            <div class="kpi-footer">
+              <span style="font-size: 0.82rem; color: var(--status-success); font-weight: 600;">Tingkat penyelesaian 82%</span>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-header">
+              <span class="kpi-label">Prioritas Tinggi</span>
+              <div class="kpi-icon-pill red">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+            </div>
+            <div class="kpi-value">2 <span style="font-size: 0.95rem; font-weight: 500; color: var(--text-muted);">Perlu perhatian cepat</span></div>
+            <div class="kpi-footer">
+              <span style="font-size: 0.82rem; color: var(--status-danger); font-weight: 600;">🚩 Segera disubmit sebelum tenggat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILTER TABS & SELECT -->
+        <div class="card-panel" style="padding: 16px 20px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+          <div class="filter-tabs" style="margin-bottom: 0;">
+            <button class="filter-chip active" data-filter="all">Semua Tugas (22)</button>
+            <button class="filter-chip" data-filter="uncompleted">Belum Selesai (4)</button>
+            <button class="filter-chip" data-filter="urgent">Mendekati Deadline (2)</button>
+            <button class="filter-chip" data-filter="completed">Selesai (18)</button>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <select class="form-select" style="padding: 7px 12px; font-size: 0.85rem; width: auto;">
+              <option>Semua Mata Kuliah</option>
+              <option>Pemrograman Web Lanjut</option>
+              <option>Desain Interaksi MK</option>
+              <option>Basis Data Terdistribusi</option>
+              <option>Kecerdasan Buatan & ML</option>
+            </select>
+            <button class="btn btn-outline btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="8" y1="12" x2="20" y2="12"></line><line x1="14" y1="18" x2="20" y2="18"></line></svg>
+              Deadline Terdekat ⇅
+            </button>
+          </div>
+        </div>
+
+        <!-- TASK LIST -->
+        <div class="task-list">
+          <!-- TUGAS 1 -->
+          <div class="task-card priority-high">
+            <div class="task-checkbox-wrap">
+              <input type="checkbox" class="task-checkbox-input" style="accent-color: var(--primary-color); width: 18px; height: 18px;">
+            </div>
+            <div class="task-content">
+              <div class="task-tags">
+                <span class="badge badge-purple">Pemrograman Web Lanjut</span>
+                <span class="badge badge-danger"><span class="badge-dot"></span> Prioritas Tinggi</span>
+                <span class="badge badge-neutral">Belum Selesai</span>
+              </div>
+              <h4 class="task-title">Implementasi REST API & JWT Authentication</h4>
+              <div class="task-meta">
+                <span class="task-due urgent">⏰ Deadline: Hari ini, 23:59 WIB</span>
+                <span>•</span>
+                <span>📎 3 Modul Penilaian</span>
+              </div>
+            </div>
+            <div class="task-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka detail instruksi dan rubrik penilaian...')">Detail Tugas</button>
+              <button class="btn btn-primary btn-sm btn-complete-task">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Tandai Selesai
+              </button>
+            </div>
+          </div>
+
+          <!-- TUGAS 2 -->
+          <div class="task-card priority-medium">
+            <div class="task-checkbox-wrap">
+              <input type="checkbox" class="task-checkbox-input" style="accent-color: var(--primary-color); width: 18px; height: 18px;">
+            </div>
+            <div class="task-content">
+              <div class="task-tags">
+                <span class="badge badge-purple">Desain Interaksi MK</span>
+                <span class="badge badge-warning"><span class="badge-dot"></span> Prioritas Sedang</span>
+                <span class="badge badge-neutral">Belum Selesai</span>
+              </div>
+              <h4 class="task-title">Wireframe & Prototipe Desain Antarmuka Mobile</h4>
+              <div class="task-meta">
+                <span style="color: var(--status-warning); font-weight: 600;">⏰ Deadline: Besok, 12:00 WIB</span>
+                <span>•</span>
+                <span>📎 Figma Workspace Link</span>
+              </div>
+            </div>
+            <div class="task-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka file prototipe Figma...')">Detail Tugas</button>
+              <button class="btn btn-primary btn-sm btn-complete-task">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Tandai Selesai
+              </button>
+            </div>
+          </div>
+
+          <!-- TUGAS 3 -->
+          <div class="task-card priority-low">
+            <div class="task-checkbox-wrap">
+              <input type="checkbox" class="task-checkbox-input" style="accent-color: var(--primary-color); width: 18px; height: 18px;">
+            </div>
+            <div class="task-content">
+              <div class="task-tags">
+                <span class="badge badge-purple">Basis Data Terdistribusi</span>
+                <span class="badge badge-success"><span class="badge-dot"></span> Prioritas Rendah</span>
+                <span class="badge badge-purple">Sedang Dikerjakan</span>
+              </div>
+              <h4 class="task-title">Resume Paper Sharding & Konsistensi Teorema CAP</h4>
+              <div class="task-meta">
+                <span>⏰ Deadline: Kamis, 24 Okt 2024</span>
+                <span>•</span>
+                <span>📎 Format PDF / 4 Halaman</span>
+              </div>
+            </div>
+            <div class="task-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka template paper...')">Detail Tugas</button>
+              <button class="btn btn-primary btn-sm btn-complete-task">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Tandai Selesai
+              </button>
+            </div>
+          </div>
+
+          <!-- TUGAS 4 -->
+          <div class="task-card priority-high">
+            <div class="task-checkbox-wrap">
+              <input type="checkbox" class="task-checkbox-input" style="accent-color: var(--primary-color); width: 18px; height: 18px;">
+            </div>
+            <div class="task-content">
+              <div class="task-tags">
+                <span class="badge badge-purple">Kecerdasan Buatan & ML</span>
+                <span class="badge badge-danger"><span class="badge-dot"></span> Prioritas Tinggi</span>
+                <span class="badge badge-neutral">Belum Selesai</span>
+              </div>
+              <h4 class="task-title">Studi Kasus Algoritma Backpropagation</h4>
+              <div class="task-meta">
+                <span class="task-due urgent">⏰ Deadline: Jumat, 25 Okt 2024</span>
+                <span>•</span>
+                <span>📎 Jupyter Notebook / Python</span>
+              </div>
+            </div>
+            <div class="task-actions">
+              <button class="btn btn-outline btn-sm" onclick="showToast('Membuka dataset Jupyter Notebook...')">Detail Tugas</button>
+              <button class="btn btn-primary btn-sm btn-complete-task">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Tandai Selesai
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- MODAL: BUAT TUGAS BARU -->
+  <div class="modal-backdrop" id="createTaskModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">+ Buat Tugas Kuliah Baru</h3>
+        <button class="btn-icon" data-close-modal style="border: none;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <form id="createTaskForm">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="taskTitleInput">Judul Tugas / Penugasan</label>
+            <input type="text" id="taskTitleInput" class="form-input" placeholder="Contoh: Implementasi Graph Neural Network" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="taskSubjectSelect">Mata Kuliah</label>
+            <select id="taskSubjectSelect" class="form-select">
+              <option value="Pemrograman Web Lanjut">Pemrograman Web Lanjut</option>
+              <option value="Kecerdasan Buatan & ML">Kecerdasan Buatan & ML</option>
+              <option value="Desain Interaksi MK">Desain Interaksi MK</option>
+              <option value="Basis Data Terdistribusi">Basis Data Terdistribusi</option>
+              <option value="Etika Profesi & Komunikasi">Etika Profesi & Komunikasi</option>
+            </select>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="taskDeadlineInput">Tenggat Waktu</label>
+              <input type="text" id="taskDeadlineInput" class="form-input" placeholder="Contoh: Sabtu, 23:59 WIB" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="taskPrioritySelect">Tingkat Prioritas</label>
+              <select id="taskPrioritySelect" class="form-select">
+                <option value="Tinggi">Tinggi (Mendesak)</option>
+                <option value="Sedang">Sedang</option>
+                <option value="Rendah">Rendah</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" data-close-modal>Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan Tugas</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container"></div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
